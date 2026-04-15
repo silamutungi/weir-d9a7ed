@@ -156,15 +156,15 @@ export default function Navbar() {
           >
             <Link
               to="/"
+              onClick={() => setOpen(false)}
               className="text-xl font-bold"
               style={{ color: 'var(--color-primary)' }}
-              onClick={() => setOpen(false)}
             >
               WEIR
             </Link>
             <button
               onClick={() => setOpen(false)}
-              className="flex items-center justify-center w-8 h-8 rounded-lg transition-colors duration-150 relative"
+              className="relative flex items-center justify-center w-8 h-8 rounded-lg transition-colors duration-150"
               style={{ color: 'var(--color-text-secondary)' }}
               aria-label="Close menu"
             >
