@@ -52,7 +52,7 @@ export default function Navbar() {
       >
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link
-            to="/"
+            to="/dashboard"
             className="text-xl font-bold"
             style={{ color: 'var(--color-primary)' }}
           >
@@ -154,17 +154,15 @@ export default function Navbar() {
             className="flex items-center justify-between px-6 h-16 border-b flex-shrink-0"
             style={{ borderColor: 'var(--color-border)' }}
           >
-            <Link
-              to="/"
+            <span
               className="text-xl font-bold"
               style={{ color: 'var(--color-primary)' }}
-              onClick={() => setOpen(false)}
             >
               WEIR
-            </Link>
+            </span>
             <button
               onClick={() => setOpen(false)}
-              className="flex items-center justify-center w-8 h-8 rounded-lg transition-colors duration-150"
+              className="relative flex items-center justify-center w-8 h-8 rounded-lg transition-colors duration-150"
               style={{ color: 'var(--color-text-secondary)' }}
               aria-label="Close menu"
             >
